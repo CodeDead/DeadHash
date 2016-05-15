@@ -566,7 +566,7 @@ namespace DeadHash.Forms
             // 
             // splitContainerAdv
             // 
-            this.splitContainerAdv.BeforeTouchSize = 8;
+            this.splitContainerAdv.BeforeTouchSize = 13;
             this.splitContainerAdv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerAdv.HotExpandLine = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.splitContainerAdv.Location = new System.Drawing.Point(0, 32);
@@ -596,7 +596,7 @@ namespace DeadHash.Forms
             this.splitContainerAdv.Panel2.Controls.Add(this.lblMD5);
             this.splitContainerAdv.Size = new System.Drawing.Size(558, 232);
             this.splitContainerAdv.SplitterDistance = 180;
-            this.splitContainerAdv.SplitterWidth = 8;
+            this.splitContainerAdv.SplitterWidth = 13;
             this.splitContainerAdv.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Metro;
             this.splitContainerAdv.TabIndex = 4;
             this.splitContainerAdv.Text = "splitContainerAdv1";
@@ -633,9 +633,11 @@ namespace DeadHash.Forms
             this.txtCRC32.Location = new System.Drawing.Point(93, 184);
             this.txtCRC32.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtCRC32.Name = "txtCRC32";
+            this.txtCRC32.ReadOnly = true;
             this.txtCRC32.Size = new System.Drawing.Size(263, 20);
             this.txtCRC32.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtCRC32.TabIndex = 13;
+            this.txtCRC32.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblCRC32
             // 
@@ -663,9 +665,11 @@ namespace DeadHash.Forms
             this.txtRIPEMD160.Location = new System.Drawing.Point(93, 158);
             this.txtRIPEMD160.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtRIPEMD160.Name = "txtRIPEMD160";
+            this.txtRIPEMD160.ReadOnly = true;
             this.txtRIPEMD160.Size = new System.Drawing.Size(263, 20);
             this.txtRIPEMD160.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtRIPEMD160.TabIndex = 11;
+            this.txtRIPEMD160.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblRIPEMD160
             // 
@@ -693,9 +697,11 @@ namespace DeadHash.Forms
             this.txtSHA512.Location = new System.Drawing.Point(93, 132);
             this.txtSHA512.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA512.Name = "txtSHA512";
+            this.txtSHA512.ReadOnly = true;
             this.txtSHA512.Size = new System.Drawing.Size(263, 20);
             this.txtSHA512.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA512.TabIndex = 9;
+            this.txtSHA512.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblSHA512
             // 
@@ -723,9 +729,11 @@ namespace DeadHash.Forms
             this.txtSHA384.Location = new System.Drawing.Point(93, 106);
             this.txtSHA384.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA384.Name = "txtSHA384";
+            this.txtSHA384.ReadOnly = true;
             this.txtSHA384.Size = new System.Drawing.Size(263, 20);
             this.txtSHA384.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA384.TabIndex = 7;
+            this.txtSHA384.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblSHA384
             // 
@@ -753,9 +761,11 @@ namespace DeadHash.Forms
             this.txtSHA256.Location = new System.Drawing.Point(93, 80);
             this.txtSHA256.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA256.Name = "txtSHA256";
+            this.txtSHA256.ReadOnly = true;
             this.txtSHA256.Size = new System.Drawing.Size(263, 20);
             this.txtSHA256.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA256.TabIndex = 5;
+            this.txtSHA256.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblSHA256
             // 
@@ -783,9 +793,11 @@ namespace DeadHash.Forms
             this.txtSHA1.Location = new System.Drawing.Point(93, 54);
             this.txtSHA1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA1.Name = "txtSHA1";
+            this.txtSHA1.ReadOnly = true;
             this.txtSHA1.Size = new System.Drawing.Size(263, 20);
             this.txtSHA1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA1.TabIndex = 3;
+            this.txtSHA1.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblSHA1
             // 
@@ -813,9 +825,11 @@ namespace DeadHash.Forms
             this.txtMD5.Location = new System.Drawing.Point(93, 28);
             this.txtMD5.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtMD5.Name = "txtMD5";
+            this.txtMD5.ReadOnly = true;
             this.txtMD5.Size = new System.Drawing.Size(263, 20);
             this.txtMD5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtMD5.TabIndex = 1;
+            this.txtMD5.DoubleClick += new System.EventHandler(this.txtProperty_DoubleClick);
             // 
             // lblMD5
             // 

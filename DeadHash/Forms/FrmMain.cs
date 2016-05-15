@@ -1,19 +1,20 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
+using Syncfusion.Windows.Forms.Tools;
 
 namespace DeadHash.Forms
 {
     public partial class FrmMain : MetroForm
     {
+        /// <summary>
+        /// Constructor for the Main Form
+        /// </summary>
         public FrmMain()
         {
             InitializeComponent();
             LoadTheme();
+            LoadLanguage();
         }
 
         /// <summary>
@@ -51,7 +52,28 @@ namespace DeadHash.Forms
         /// </summary>
         private void LoadLanguage()
         {
-            
+
+        }
+
+        /// <summary>
+        /// Copy the content of the textbox to the clipboard
+        /// </summary>
+        /// <param name="sender">The textbox that was double clicked</param>
+        /// <param name="e">Event argument</param>
+        private void txtProperty_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                TextBoxExt ext = sender as TextBoxExt;
+                if (ext != null && ext.Text.Length != 0)
+                {
+                    Clipboard.SetText(ext.Text);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

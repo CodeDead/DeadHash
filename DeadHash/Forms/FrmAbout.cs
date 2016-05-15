@@ -6,10 +6,14 @@ namespace DeadHash.Forms
 {
     public partial class FrmAbout : MetroForm
     {
+        /// <summary>
+        /// Constructor for the About Form
+        /// </summary>
         public FrmAbout()
         {
             InitializeComponent();
             LoadTheme();
+            LoadLanguage();
         }
 
         /// <summary>
@@ -33,11 +37,21 @@ namespace DeadHash.Forms
 
         }
 
+        /// <summary>
+        /// Close the form when the close button is clicked
+        /// </summary>
+        /// <param name="sender">The close button</param>
+        /// <param name="e">Event argument</param>
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
 
+        /// <summary>
+        /// Open the CodeDead website in the default browser when the CodeDead button is clicked
+        /// </summary>
+        /// <param name="sender">The CodeDead button</param>
+        /// <param name="e">Event argument</param>
         private void btnCodeDead_Click(object sender, EventArgs e)
         {
             try
