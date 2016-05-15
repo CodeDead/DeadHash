@@ -566,7 +566,7 @@ namespace DeadHash.Forms
             // 
             // splitContainerAdv
             // 
-            this.splitContainerAdv.BeforeTouchSize = 10;
+            this.splitContainerAdv.BeforeTouchSize = 8;
             this.splitContainerAdv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerAdv.HotExpandLine = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.splitContainerAdv.Location = new System.Drawing.Point(0, 32);
@@ -596,7 +596,7 @@ namespace DeadHash.Forms
             this.splitContainerAdv.Panel2.Controls.Add(this.lblMD5);
             this.splitContainerAdv.Size = new System.Drawing.Size(558, 232);
             this.splitContainerAdv.SplitterDistance = 180;
-            this.splitContainerAdv.SplitterWidth = 10;
+            this.splitContainerAdv.SplitterWidth = 8;
             this.splitContainerAdv.Style = Syncfusion.Windows.Forms.Tools.Enums.Style.Metro;
             this.splitContainerAdv.TabIndex = 4;
             this.splitContainerAdv.Text = "splitContainerAdv1";
@@ -626,14 +626,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCRC32.BackColor = System.Drawing.Color.White;
-            this.txtCRC32.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtCRC32.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtCRC32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtCRC32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCRC32.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCRC32.Location = new System.Drawing.Point(93, 184);
             this.txtCRC32.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtCRC32.Name = "txtCRC32";
-            this.txtCRC32.Size = new System.Drawing.Size(261, 20);
+            this.txtCRC32.Size = new System.Drawing.Size(263, 20);
             this.txtCRC32.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtCRC32.TabIndex = 13;
             // 
@@ -656,14 +656,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtRIPEMD160.BackColor = System.Drawing.Color.White;
-            this.txtRIPEMD160.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtRIPEMD160.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtRIPEMD160.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtRIPEMD160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRIPEMD160.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRIPEMD160.Location = new System.Drawing.Point(93, 158);
             this.txtRIPEMD160.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtRIPEMD160.Name = "txtRIPEMD160";
-            this.txtRIPEMD160.Size = new System.Drawing.Size(261, 20);
+            this.txtRIPEMD160.Size = new System.Drawing.Size(263, 20);
             this.txtRIPEMD160.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtRIPEMD160.TabIndex = 11;
             // 
@@ -686,14 +686,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSHA512.BackColor = System.Drawing.Color.White;
-            this.txtSHA512.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtSHA512.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtSHA512.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA512.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA512.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSHA512.Location = new System.Drawing.Point(93, 132);
             this.txtSHA512.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA512.Name = "txtSHA512";
-            this.txtSHA512.Size = new System.Drawing.Size(261, 20);
+            this.txtSHA512.Size = new System.Drawing.Size(263, 20);
             this.txtSHA512.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA512.TabIndex = 9;
             // 
@@ -716,14 +716,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSHA384.BackColor = System.Drawing.Color.White;
-            this.txtSHA384.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtSHA384.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtSHA384.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA384.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA384.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSHA384.Location = new System.Drawing.Point(93, 106);
             this.txtSHA384.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA384.Name = "txtSHA384";
-            this.txtSHA384.Size = new System.Drawing.Size(261, 20);
+            this.txtSHA384.Size = new System.Drawing.Size(263, 20);
             this.txtSHA384.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA384.TabIndex = 7;
             // 
@@ -746,14 +746,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSHA256.BackColor = System.Drawing.Color.White;
-            this.txtSHA256.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtSHA256.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtSHA256.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA256.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA256.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSHA256.Location = new System.Drawing.Point(93, 80);
             this.txtSHA256.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA256.Name = "txtSHA256";
-            this.txtSHA256.Size = new System.Drawing.Size(261, 20);
+            this.txtSHA256.Size = new System.Drawing.Size(263, 20);
             this.txtSHA256.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA256.TabIndex = 5;
             // 
@@ -776,14 +776,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSHA1.BackColor = System.Drawing.Color.White;
-            this.txtSHA1.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtSHA1.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtSHA1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSHA1.Location = new System.Drawing.Point(93, 54);
             this.txtSHA1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA1.Name = "txtSHA1";
-            this.txtSHA1.Size = new System.Drawing.Size(261, 20);
+            this.txtSHA1.Size = new System.Drawing.Size(263, 20);
             this.txtSHA1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtSHA1.TabIndex = 3;
             // 
@@ -806,14 +806,14 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMD5.BackColor = System.Drawing.Color.White;
-            this.txtMD5.BeforeTouchSize = new System.Drawing.Size(261, 20);
+            this.txtMD5.BeforeTouchSize = new System.Drawing.Size(263, 20);
             this.txtMD5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtMD5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMD5.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMD5.Location = new System.Drawing.Point(93, 28);
             this.txtMD5.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtMD5.Name = "txtMD5";
-            this.txtMD5.Size = new System.Drawing.Size(261, 20);
+            this.txtMD5.Size = new System.Drawing.Size(263, 20);
             this.txtMD5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
             this.txtMD5.TabIndex = 1;
             // 
