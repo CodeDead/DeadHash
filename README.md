@@ -1,7 +1,7 @@
 # DeadHash
 DeadHash is a freeware utility to calculate file hashes.
 
-This GitHub repository has been created to allow user to view, edit and share the code behind DeadLock. DeadLock is licensed under the GPL V3, so please follow the rules ;).
+This GitHub repository has been created to allow user to view, edit and share the code behind DeadHash. DeadHash is licensed under the GPL V3, so please follow the rules ;).
 
 Requirements in order to build DeadLock:
 
