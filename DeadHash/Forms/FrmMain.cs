@@ -30,6 +30,7 @@ namespace DeadHash.Forms
         /// </summary>
         private void LoadTheme()
         {
+            MetroColor = Properties.Settings.Default.MetroColor;
             BorderColor = MetroColor;
             CaptionBarColor = MetroColor;
 
@@ -37,11 +38,19 @@ namespace DeadHash.Forms
             mfbmMain.ResetCustomization = false;
             mfbmMain.Style = VisualStyle.Metro;
 
-            fileParentBarItem.MetroColor = Properties.Settings.Default.MetroColor;
-            editParentBarItem.MetroColor = Properties.Settings.Default.MetroColor;
-            viewParentBarItem.MetroColor = Properties.Settings.Default.MetroColor;
-            toolsParentBarItem.MetroColor = Properties.Settings.Default.MetroColor;
-            helpParentBarItem.MetroColor = Properties.Settings.Default.MetroColor;
+            fileParentBarItem.MetroColor = MetroColor;
+            editParentBarItem.MetroColor = MetroColor;
+            viewParentBarItem.MetroColor = MetroColor;
+            toolsParentBarItem.MetroColor = MetroColor;
+            helpParentBarItem.MetroColor = MetroColor;
+
+            txtMD5.Metrocolor = MetroColor;
+            txtSHA1.Metrocolor = MetroColor;
+            txtSHA256.Metrocolor = MetroColor;
+            txtSHA384.Metrocolor = MetroColor;
+            txtSHA512.Metrocolor = MetroColor;
+            txtRIPEMD160.Metrocolor = MetroColor;
+            txtCRC32.Metrocolor = MetroColor;
 
             mfbmMain.RefreshCommandBarsAfterDesignerLoad(false);
         }

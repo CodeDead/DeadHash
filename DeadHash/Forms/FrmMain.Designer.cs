@@ -74,7 +74,35 @@ namespace DeadHash.Forms
             this.websiteBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.licenseBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
             this.aboutBarItem = new Syncfusion.Windows.Forms.Tools.XPMenus.BarItem();
+            this.splitContainerAdv = new Syncfusion.Windows.Forms.Tools.SplitContainerAdv();
+            this.lsvPaths = new System.Windows.Forms.ListView();
+            this.clhPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lblMD5 = new System.Windows.Forms.Label();
+            this.txtMD5 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblSHA1 = new System.Windows.Forms.Label();
+            this.txtSHA1 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.txtSHA256 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblSHA256 = new System.Windows.Forms.Label();
+            this.txtSHA384 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblSHA384 = new System.Windows.Forms.Label();
+            this.txtSHA512 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblSHA512 = new System.Windows.Forms.Label();
+            this.txtRIPEMD160 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblRIPEMD160 = new System.Windows.Forms.Label();
+            this.txtCRC32 = new Syncfusion.Windows.Forms.Tools.TextBoxExt();
+            this.lblCRC32 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.mfbmMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv)).BeginInit();
+            this.splitContainerAdv.Panel1.SuspendLayout();
+            this.splitContainerAdv.Panel2.SuspendLayout();
+            this.splitContainerAdv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMD5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA256)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA384)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA512)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRIPEMD160)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCRC32)).BeginInit();
             this.SuspendLayout();
             // 
             // mfbmMain
@@ -536,6 +564,253 @@ namespace DeadHash.Forms
             this.aboutBarItem.SizeToFit = true;
             this.aboutBarItem.Text = "About";
             // 
+            // splitContainerAdv
+            // 
+            this.splitContainerAdv.BeforeTouchSize = 7;
+            this.splitContainerAdv.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerAdv.Location = new System.Drawing.Point(0, 32);
+            this.splitContainerAdv.Name = "splitContainerAdv";
+            // 
+            // splitContainerAdv.Paths
+            // 
+            this.splitContainerAdv.Panel1.Controls.Add(this.lsvPaths);
+            // 
+            // splitContainerAdv.Properties
+            // 
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtCRC32);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblCRC32);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtRIPEMD160);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblRIPEMD160);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtSHA512);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblSHA512);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtSHA384);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblSHA384);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtSHA256);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblSHA256);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtSHA1);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblSHA1);
+            this.splitContainerAdv.Panel2.Controls.Add(this.txtMD5);
+            this.splitContainerAdv.Panel2.Controls.Add(this.lblMD5);
+            this.splitContainerAdv.Size = new System.Drawing.Size(558, 232);
+            this.splitContainerAdv.SplitterDistance = 180;
+            this.splitContainerAdv.TabIndex = 4;
+            this.splitContainerAdv.Text = "splitContainerAdv1";
+            // 
+            // lsvPaths
+            // 
+            this.lsvPaths.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.clhPath});
+            this.lsvPaths.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lsvPaths.FullRowSelect = true;
+            this.lsvPaths.GridLines = true;
+            this.lsvPaths.Location = new System.Drawing.Point(0, 0);
+            this.lsvPaths.Name = "lsvPaths";
+            this.lsvPaths.Size = new System.Drawing.Size(180, 232);
+            this.lsvPaths.TabIndex = 0;
+            this.lsvPaths.UseCompatibleStateImageBehavior = false;
+            this.lsvPaths.View = System.Windows.Forms.View.Details;
+            // 
+            // clhPath
+            // 
+            this.clhPath.Text = "Path";
+            this.clhPath.Width = 124;
+            // 
+            // lblMD5
+            // 
+            this.lblMD5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMD5.AutoSize = true;
+            this.lblMD5.BackColor = System.Drawing.Color.Transparent;
+            this.lblMD5.Location = new System.Drawing.Point(16, 19);
+            this.lblMD5.Name = "lblMD5";
+            this.lblMD5.Size = new System.Drawing.Size(33, 13);
+            this.lblMD5.TabIndex = 0;
+            this.lblMD5.Text = "MD5:";
+            // 
+            // txtMD5
+            // 
+            this.txtMD5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMD5.BackColor = System.Drawing.Color.White;
+            this.txtMD5.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtMD5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtMD5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMD5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMD5.Location = new System.Drawing.Point(95, 12);
+            this.txtMD5.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtMD5.Name = "txtMD5";
+            this.txtMD5.Size = new System.Drawing.Size(264, 20);
+            this.txtMD5.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtMD5.TabIndex = 1;
+            // 
+            // lblSHA1
+            // 
+            this.lblSHA1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSHA1.AutoSize = true;
+            this.lblSHA1.BackColor = System.Drawing.Color.Transparent;
+            this.lblSHA1.Location = new System.Drawing.Point(16, 45);
+            this.lblSHA1.Name = "lblSHA1";
+            this.lblSHA1.Size = new System.Drawing.Size(41, 13);
+            this.lblSHA1.TabIndex = 2;
+            this.lblSHA1.Text = "SHA-1:";
+            // 
+            // txtSHA1
+            // 
+            this.txtSHA1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSHA1.BackColor = System.Drawing.Color.White;
+            this.txtSHA1.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtSHA1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSHA1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSHA1.Location = new System.Drawing.Point(95, 38);
+            this.txtSHA1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA1.Name = "txtSHA1";
+            this.txtSHA1.Size = new System.Drawing.Size(264, 20);
+            this.txtSHA1.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtSHA1.TabIndex = 3;
+            // 
+            // txtSHA256
+            // 
+            this.txtSHA256.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSHA256.BackColor = System.Drawing.Color.White;
+            this.txtSHA256.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtSHA256.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA256.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSHA256.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSHA256.Location = new System.Drawing.Point(95, 64);
+            this.txtSHA256.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA256.Name = "txtSHA256";
+            this.txtSHA256.Size = new System.Drawing.Size(264, 20);
+            this.txtSHA256.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtSHA256.TabIndex = 5;
+            // 
+            // lblSHA256
+            // 
+            this.lblSHA256.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSHA256.AutoSize = true;
+            this.lblSHA256.BackColor = System.Drawing.Color.Transparent;
+            this.lblSHA256.Location = new System.Drawing.Point(16, 71);
+            this.lblSHA256.Name = "lblSHA256";
+            this.lblSHA256.Size = new System.Drawing.Size(53, 13);
+            this.lblSHA256.TabIndex = 4;
+            this.lblSHA256.Text = "SHA-256:";
+            // 
+            // txtSHA384
+            // 
+            this.txtSHA384.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSHA384.BackColor = System.Drawing.Color.White;
+            this.txtSHA384.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtSHA384.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA384.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSHA384.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSHA384.Location = new System.Drawing.Point(95, 90);
+            this.txtSHA384.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA384.Name = "txtSHA384";
+            this.txtSHA384.Size = new System.Drawing.Size(264, 20);
+            this.txtSHA384.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtSHA384.TabIndex = 7;
+            // 
+            // lblSHA384
+            // 
+            this.lblSHA384.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSHA384.AutoSize = true;
+            this.lblSHA384.BackColor = System.Drawing.Color.Transparent;
+            this.lblSHA384.Location = new System.Drawing.Point(16, 97);
+            this.lblSHA384.Name = "lblSHA384";
+            this.lblSHA384.Size = new System.Drawing.Size(53, 13);
+            this.lblSHA384.TabIndex = 6;
+            this.lblSHA384.Text = "SHA-384:";
+            // 
+            // txtSHA512
+            // 
+            this.txtSHA512.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtSHA512.BackColor = System.Drawing.Color.White;
+            this.txtSHA512.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtSHA512.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA512.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSHA512.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSHA512.Location = new System.Drawing.Point(95, 116);
+            this.txtSHA512.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtSHA512.Name = "txtSHA512";
+            this.txtSHA512.Size = new System.Drawing.Size(264, 20);
+            this.txtSHA512.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtSHA512.TabIndex = 9;
+            // 
+            // lblSHA512
+            // 
+            this.lblSHA512.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSHA512.AutoSize = true;
+            this.lblSHA512.BackColor = System.Drawing.Color.Transparent;
+            this.lblSHA512.Location = new System.Drawing.Point(16, 123);
+            this.lblSHA512.Name = "lblSHA512";
+            this.lblSHA512.Size = new System.Drawing.Size(53, 13);
+            this.lblSHA512.TabIndex = 8;
+            this.lblSHA512.Text = "SHA-512:";
+            // 
+            // txtRIPEMD160
+            // 
+            this.txtRIPEMD160.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtRIPEMD160.BackColor = System.Drawing.Color.White;
+            this.txtRIPEMD160.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtRIPEMD160.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtRIPEMD160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtRIPEMD160.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtRIPEMD160.Location = new System.Drawing.Point(95, 142);
+            this.txtRIPEMD160.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtRIPEMD160.Name = "txtRIPEMD160";
+            this.txtRIPEMD160.Size = new System.Drawing.Size(264, 20);
+            this.txtRIPEMD160.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtRIPEMD160.TabIndex = 11;
+            // 
+            // lblRIPEMD160
+            // 
+            this.lblRIPEMD160.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblRIPEMD160.AutoSize = true;
+            this.lblRIPEMD160.BackColor = System.Drawing.Color.Transparent;
+            this.lblRIPEMD160.Location = new System.Drawing.Point(16, 149);
+            this.lblRIPEMD160.Name = "lblRIPEMD160";
+            this.lblRIPEMD160.Size = new System.Drawing.Size(73, 13);
+            this.lblRIPEMD160.TabIndex = 10;
+            this.lblRIPEMD160.Text = "RIPEMD-160:";
+            // 
+            // txtCRC32
+            // 
+            this.txtCRC32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCRC32.BackColor = System.Drawing.Color.White;
+            this.txtCRC32.BeforeTouchSize = new System.Drawing.Size(264, 20);
+            this.txtCRC32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtCRC32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCRC32.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCRC32.Location = new System.Drawing.Point(95, 168);
+            this.txtCRC32.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
+            this.txtCRC32.Name = "txtCRC32";
+            this.txtCRC32.Size = new System.Drawing.Size(264, 20);
+            this.txtCRC32.Style = Syncfusion.Windows.Forms.Tools.TextBoxExt.theme.Metro;
+            this.txtCRC32.TabIndex = 13;
+            // 
+            // lblCRC32
+            // 
+            this.lblCRC32.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCRC32.AutoSize = true;
+            this.lblCRC32.BackColor = System.Drawing.Color.Transparent;
+            this.lblCRC32.Location = new System.Drawing.Point(16, 175);
+            this.lblCRC32.Name = "lblCRC32";
+            this.lblCRC32.Size = new System.Drawing.Size(44, 13);
+            this.lblCRC32.TabIndex = 12;
+            this.lblCRC32.Text = "CRC32:";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -546,12 +821,26 @@ namespace DeadHash.Forms
             this.CaptionButtonColor = System.Drawing.Color.Black;
             this.CaptionButtonHoverColor = System.Drawing.Color.White;
             this.CaptionForeColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(488, 314);
+            this.ClientSize = new System.Drawing.Size(558, 264);
+            this.Controls.Add(this.splitContainerAdv);
+            this.DoubleBuffered = true;
             this.MetroColor = System.Drawing.Color.SteelBlue;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeadHash";
             ((System.ComponentModel.ISupportInitialize)(this.mfbmMain)).EndInit();
+            this.splitContainerAdv.Panel1.ResumeLayout(false);
+            this.splitContainerAdv.Panel2.ResumeLayout(false);
+            this.splitContainerAdv.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerAdv)).EndInit();
+            this.splitContainerAdv.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtMD5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA256)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA384)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSHA512)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRIPEMD160)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtCRC32)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -596,5 +885,22 @@ namespace DeadHash.Forms
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem websiteBarItem;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem licenseBarItem;
         private Syncfusion.Windows.Forms.Tools.XPMenus.BarItem aboutBarItem;
+        private Syncfusion.Windows.Forms.Tools.SplitContainerAdv splitContainerAdv;
+        private System.Windows.Forms.ListView lsvPaths;
+        private System.Windows.Forms.ColumnHeader clhPath;
+        private System.Windows.Forms.Label lblMD5;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtMD5;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSHA1;
+        private System.Windows.Forms.Label lblSHA1;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtCRC32;
+        private System.Windows.Forms.Label lblCRC32;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtRIPEMD160;
+        private System.Windows.Forms.Label lblRIPEMD160;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSHA512;
+        private System.Windows.Forms.Label lblSHA512;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSHA384;
+        private System.Windows.Forms.Label lblSHA384;
+        private Syncfusion.Windows.Forms.Tools.TextBoxExt txtSHA256;
+        private System.Windows.Forms.Label lblSHA256;
     }
 }
