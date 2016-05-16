@@ -499,6 +499,7 @@ namespace DeadHash.Forms
             this.settingsBarItem.ShowToolTipInPopUp = false;
             this.settingsBarItem.SizeToFit = true;
             this.settingsBarItem.Text = "Settings";
+            this.settingsBarItem.Click += new System.EventHandler(this.settingsBarItem_Click);
             // 
             // helpParentBarItem
             // 

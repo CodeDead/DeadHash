@@ -146,5 +146,15 @@ namespace DeadHash.Forms
                 MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// Show the Settings Form when the user clicks the Settings button
+        /// </summary>
+        /// <param name="sender">The Settings button</param>
+        /// <param name="e">Event argument</param>
+        private void settingsBarItem_Click(object sender, EventArgs e)
+        {
+            new FrmSettings().ShowDialog();
+        }
     }
 }
