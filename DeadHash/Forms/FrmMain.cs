@@ -10,11 +10,16 @@ namespace DeadHash.Forms
         /// <summary>
         /// Constructor for the Main Form
         /// </summary>
-        public FrmMain()
+        public FrmMain(string[] args)
         {
             InitializeComponent();
             LoadTheme();
             LoadLanguage();
+
+            foreach(string s in args)
+            {
+                OpenFile(s);
+            }
         }
 
         /// <summary>
@@ -53,6 +58,15 @@ namespace DeadHash.Forms
         private void LoadLanguage()
         {
 
+        }
+
+        /// <summary>
+        /// Load a file into the GUI, so that the user can view its properties
+        /// </summary>
+        /// <param name="path">The full path of a file</param>
+        private void OpenFile(string path)
+        {
+            
         }
 
         /// <summary>
