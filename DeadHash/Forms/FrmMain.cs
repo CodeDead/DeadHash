@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
@@ -66,7 +67,9 @@ namespace DeadHash.Forms
         /// <param name="path">The full path of a file</param>
         private void OpenFile(string path)
         {
-            
+            if (!File.Exists(path)) return;
+            ListViewItem lvi = new ListViewItem {Text = path};
+            lsvPaths.Items.Add(lvi);
         }
 
         /// <summary>
@@ -169,6 +172,26 @@ namespace DeadHash.Forms
         private void settingsBarItem_Click(object sender, EventArgs e)
         {
             new FrmSettings().ShowDialog();
+        }
+
+        /// <summary>
+        /// Open a file
+        /// </summary>
+        /// <param name="sender">The Open file bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void openFileBarItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog
+            {
+                Multiselect = true,
+                Filter = @"*.*|*.*"
+            };
+
+            if (ofd.ShowDialog() != DialogResult.OK) return;
+            foreach (string s in ofd.FileNames)
+            {
+                OpenFile(s);
+            }
         }
     }
 }

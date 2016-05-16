@@ -205,6 +205,7 @@ namespace DeadHash.Forms
             this.openFileBarItem.ShowToolTipInPopUp = false;
             this.openFileBarItem.SizeToFit = true;
             this.openFileBarItem.Text = "Open file...";
+            this.openFileBarItem.Click += new System.EventHandler(this.openFileBarItem_Click);
             // 
             // openDirectoryBarItem
             // 
