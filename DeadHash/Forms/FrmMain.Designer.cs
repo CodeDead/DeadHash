@@ -250,6 +250,7 @@ namespace DeadHash.Forms
             this.exitBarItem.ShowToolTipInPopUp = false;
             this.exitBarItem.SizeToFit = true;
             this.exitBarItem.Text = "Exit";
+            this.exitBarItem.Click += new System.EventHandler(this.exitBarItem_Click);
             // 
             // editParentBarItem
             // 
@@ -527,6 +528,7 @@ namespace DeadHash.Forms
             this.helpBarItem.ShowToolTipInPopUp = false;
             this.helpBarItem.SizeToFit = true;
             this.helpBarItem.Text = "Help";
+            this.helpBarItem.Click += new System.EventHandler(this.helpBarItem_Click);
             // 
             // checkForUpdatesBarItem
             // 
@@ -545,6 +547,7 @@ namespace DeadHash.Forms
             this.websiteBarItem.ShowToolTipInPopUp = false;
             this.websiteBarItem.SizeToFit = true;
             this.websiteBarItem.Text = "Website";
+            this.websiteBarItem.Click += new System.EventHandler(this.websiteBarItem_Click);
             // 
             // licenseBarItem
             // 
@@ -554,6 +557,7 @@ namespace DeadHash.Forms
             this.licenseBarItem.ShowToolTipInPopUp = false;
             this.licenseBarItem.SizeToFit = true;
             this.licenseBarItem.Text = "License";
+            this.licenseBarItem.Click += new System.EventHandler(this.licenseBarItem_Click);
             // 
             // aboutBarItem
             // 
@@ -563,6 +567,7 @@ namespace DeadHash.Forms
             this.aboutBarItem.ShowToolTipInPopUp = false;
             this.aboutBarItem.SizeToFit = true;
             this.aboutBarItem.Text = "About";
+            this.aboutBarItem.Click += new System.EventHandler(this.aboutBarItem_Click);
             // 
             // splitContainerAdv
             // 

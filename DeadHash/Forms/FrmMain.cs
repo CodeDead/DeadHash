@@ -75,5 +75,76 @@ namespace DeadHash.Forms
                 MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// Exit the program when the user clicks on the Exit bar item button
+        /// </summary>
+        /// <param name="sender">Exit bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void exitBarItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        /// <summary>
+        /// Open the CodeDead website in the default browser when the Website button is clicked
+        /// </summary>
+        /// <param name="sender">The Website button</param>
+        /// <param name="e">Event argument</param>
+        private void websiteBarItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("http://codedead.com/");
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Show the About Form when the user clicks the About button
+        /// </summary>
+        /// <param name="sender">The About button</param>
+        /// <param name="e">Event argument</param>
+        private void aboutBarItem_Click(object sender, EventArgs e)
+        {
+            new FrmAbout().Show();
+        }
+
+        /// <summary>
+        /// Open the help documentation when the user clicks the Help button
+        /// </summary>
+        /// <param name="sender">The help button</param>
+        /// <param name="e">Event argument</param>
+        private void helpBarItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("help.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Open the license file when the user clicks the License button
+        /// </summary>
+        /// <param name="sender">The license button</param>
+        /// <param name="e">Event argument</param>
+        private void licenseBarItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("license.pdf");
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
