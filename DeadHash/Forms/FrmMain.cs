@@ -3,6 +3,7 @@ using System.IO;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
+using FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel;
 
 namespace DeadHash.Forms
 {
@@ -192,6 +193,66 @@ namespace DeadHash.Forms
             {
                 OpenFile(s);
             }
+        }
+
+        /// <summary>
+        /// Show or hide the Path panel
+        /// </summary>
+        /// <param name="sender">The Path bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void pathBarItem_Click(object sender, EventArgs e)
+        {
+            pathBarItem.Checked = !pathBarItem.Checked;
+            Panel1Helper();
+        }
+
+        /// <summary>
+        /// Hide or show the Path panel
+        /// </summary>
+        private void Panel1Helper()
+        {
+            if (pathBarItem.Checked)
+            {
+                splitContainerAdv.Panel1.Show();
+                splitContainerAdv.FixedPanel = FixedPanel.None;
+            }
+            else
+            {
+                splitContainerAdv.Panel1.Hide();
+                splitContainerAdv.FixedPanel = splitContainerAdv.Panel2.Visible ? FixedPanel.Panel2 : FixedPanel.None;
+            }
+            splitContainerAdv.Panel1Collapsed = !pathBarItem.Checked;
+            splitContainerAdv.IsSplitterFixed = !pathBarItem.Checked;
+        }
+
+        /// <summary>
+        /// Hide or show the Properties panel
+        /// </summary>
+        /// <param name="sender">The Properties bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void propertiesBarItem_Click(object sender, EventArgs e)
+        {
+            propertiesBarItem.Checked = !propertiesBarItem.Checked;
+            Panel2Helper();
+        }
+
+        /// <summary>
+        /// Hide or show the Properties panel
+        /// </summary>
+        private void Panel2Helper()
+        {
+            if (propertiesBarItem.Checked)
+            {
+                splitContainerAdv.Panel2.Show();
+                splitContainerAdv.FixedPanel = FixedPanel.None;
+            }
+            else
+            {
+                splitContainerAdv.Panel2.Hide();
+                splitContainerAdv.FixedPanel = splitContainerAdv.Panel1.Visible ? FixedPanel.Panel1 : FixedPanel.None;
+            }
+            splitContainerAdv.Panel2Collapsed = !propertiesBarItem.Checked;
+            splitContainerAdv.IsSplitterFixed = !propertiesBarItem.Checked;
         }
     }
 }

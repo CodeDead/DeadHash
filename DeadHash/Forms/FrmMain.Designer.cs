@@ -368,24 +368,29 @@ namespace DeadHash.Forms
             // 
             this.pathBarItem.BarName = "pathBarItem";
             this.pathBarItem.CategoryIndex = 2;
+            this.pathBarItem.Checked = true;
             this.pathBarItem.ID = "Path";
             this.pathBarItem.ShowToolTipInPopUp = false;
             this.pathBarItem.SizeToFit = true;
             this.pathBarItem.Text = "Path";
+            this.pathBarItem.Click += new System.EventHandler(this.pathBarItem_Click);
             // 
             // propertiesBarItem
             // 
             this.propertiesBarItem.BarName = "propertiesBarItem";
             this.propertiesBarItem.CategoryIndex = 2;
+            this.propertiesBarItem.Checked = true;
             this.propertiesBarItem.ID = "Properties";
             this.propertiesBarItem.ShowToolTipInPopUp = false;
             this.propertiesBarItem.SizeToFit = true;
             this.propertiesBarItem.Text = "Properties";
+            this.propertiesBarItem.Click += new System.EventHandler(this.propertiesBarItem_Click);
             // 
             // gridlinesBarItem
             // 
             this.gridlinesBarItem.BarName = "gridlinesBarItem";
             this.gridlinesBarItem.CategoryIndex = 2;
+            this.gridlinesBarItem.Checked = true;
             this.gridlinesBarItem.ID = "Gridlines";
             this.gridlinesBarItem.ShowToolTipInPopUp = false;
             this.gridlinesBarItem.SizeToFit = true;
