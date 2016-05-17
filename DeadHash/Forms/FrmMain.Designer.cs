@@ -202,6 +202,7 @@ namespace DeadHash.Forms
             this.openFileBarItem.BarName = "openFileBarItem";
             this.openFileBarItem.CategoryIndex = 0;
             this.openFileBarItem.ID = "Open file...";
+            this.openFileBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("openFileBarItem.Image")));
             this.openFileBarItem.ShowToolTipInPopUp = false;
             this.openFileBarItem.SizeToFit = true;
             this.openFileBarItem.Text = "Open file...";
@@ -212,6 +213,7 @@ namespace DeadHash.Forms
             this.openDirectoryBarItem.BarName = "openDirectoryBarItem";
             this.openDirectoryBarItem.CategoryIndex = 0;
             this.openDirectoryBarItem.ID = "Open directory...";
+            this.openDirectoryBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("openDirectoryBarItem.Image")));
             this.openDirectoryBarItem.ShowToolTipInPopUp = false;
             this.openDirectoryBarItem.SizeToFit = true;
             this.openDirectoryBarItem.Text = "Open directory...";
@@ -221,6 +223,7 @@ namespace DeadHash.Forms
             this.openProcessesBarItem.BarName = "openProcessesBarItem";
             this.openProcessesBarItem.CategoryIndex = 0;
             this.openProcessesBarItem.ID = "Open processess...";
+            this.openProcessesBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("openProcessesBarItem.Image")));
             this.openProcessesBarItem.ShowToolTipInPopUp = false;
             this.openProcessesBarItem.SizeToFit = true;
             this.openProcessesBarItem.Text = "Open processess...";
@@ -230,6 +233,7 @@ namespace DeadHash.Forms
             this.closeBarItem.BarName = "closeBarItem";
             this.closeBarItem.CategoryIndex = 0;
             this.closeBarItem.ID = "Close";
+            this.closeBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("closeBarItem.Image")));
             this.closeBarItem.ShowToolTipInPopUp = false;
             this.closeBarItem.SizeToFit = true;
             this.closeBarItem.Text = "Close";
@@ -239,6 +243,7 @@ namespace DeadHash.Forms
             this.exportBarItem.BarName = "exportBarItem";
             this.exportBarItem.CategoryIndex = 0;
             this.exportBarItem.ID = "Export";
+            this.exportBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("exportBarItem.Image")));
             this.exportBarItem.ShowToolTipInPopUp = false;
             this.exportBarItem.SizeToFit = true;
             this.exportBarItem.Text = "Export";
@@ -248,6 +253,7 @@ namespace DeadHash.Forms
             this.exitBarItem.BarName = "exitBarItem";
             this.exitBarItem.CategoryIndex = 0;
             this.exitBarItem.ID = "Exit";
+            this.exitBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("exitBarItem.Image")));
             this.exitBarItem.ShowToolTipInPopUp = false;
             this.exitBarItem.SizeToFit = true;
             this.exitBarItem.Text = "Exit";
@@ -583,11 +589,11 @@ namespace DeadHash.Forms
             this.splitContainerAdv.Location = new System.Drawing.Point(0, 32);
             this.splitContainerAdv.Name = "splitContainerAdv";
             // 
-            // splitContainerAdv.Panel1
+            // splitContainerAdv.pnlPaths
             // 
             this.splitContainerAdv.Panel1.Controls.Add(this.lsvPaths);
             // 
-            // splitContainerAdv.Panel2
+            // splitContainerAdv.pnlProperties
             // 
             this.splitContainerAdv.Panel2.Controls.Add(this.txtCRC32);
             this.splitContainerAdv.Panel2.Controls.Add(this.lblCRC32);
@@ -864,6 +870,7 @@ namespace DeadHash.Forms
             this.ClientSize = new System.Drawing.Size(558, 264);
             this.Controls.Add(this.splitContainerAdv);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MetroColor = System.Drawing.Color.SteelBlue;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

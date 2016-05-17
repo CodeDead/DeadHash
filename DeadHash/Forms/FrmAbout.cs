@@ -63,5 +63,22 @@ namespace DeadHash.Forms
                 MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        /// <summary>
+        /// Open the paomedia website in the default browser when the Paomedia button is clicked
+        /// </summary>
+        /// <param name="sender">The Paomedia button</param>
+        /// <param name="e">Event argument</param>
+        private void btnPaomedia_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("http://paomedia.github.io/small-n-flat/");
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

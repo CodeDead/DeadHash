@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
@@ -12,7 +13,7 @@ namespace DeadHash.Forms
         /// <summary>
         /// Constructor for the Main Form
         /// </summary>
-        public FrmMain(string[] args)
+        public FrmMain(IEnumerable<string> args)
         {
             InitializeComponent();
             LoadTheme();
