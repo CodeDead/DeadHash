@@ -406,6 +406,7 @@ namespace DeadHash.Forms
             this.gridlinesBarItem.ShowToolTipInPopUp = false;
             this.gridlinesBarItem.SizeToFit = true;
             this.gridlinesBarItem.Text = "Gridlines";
+            this.gridlinesBarItem.Click += new System.EventHandler(this.gridlinesBarItem_Click);
             // 
             // fileDetailsBarItem
             // 
@@ -424,6 +425,7 @@ namespace DeadHash.Forms
             this.checkBoxesBarItem.ShowToolTipInPopUp = false;
             this.checkBoxesBarItem.SizeToFit = true;
             this.checkBoxesBarItem.Text = "Checkboxes";
+            this.checkBoxesBarItem.Click += new System.EventHandler(this.checkBoxesBarItem_Click);
             // 
             // alwaysOnTopBarItem
             // 
@@ -433,6 +435,7 @@ namespace DeadHash.Forms
             this.alwaysOnTopBarItem.ShowToolTipInPopUp = false;
             this.alwaysOnTopBarItem.SizeToFit = true;
             this.alwaysOnTopBarItem.Text = "Always on top";
+            this.alwaysOnTopBarItem.Click += new System.EventHandler(this.alwaysOnTopBarItem_Click);
             // 
             // clipboardComparingBarItem
             // 
@@ -451,6 +454,7 @@ namespace DeadHash.Forms
             this.autoSizeColumnsBarItem.ShowToolTipInPopUp = false;
             this.autoSizeColumnsBarItem.SizeToFit = true;
             this.autoSizeColumnsBarItem.Text = "Auto size columns";
+            this.autoSizeColumnsBarItem.Click += new System.EventHandler(this.autoSizeColumnsBarItem_Click);
             // 
             // toolsParentBarItem
             // 
@@ -594,11 +598,11 @@ namespace DeadHash.Forms
             this.splitContainerAdv.Location = new System.Drawing.Point(0, 32);
             this.splitContainerAdv.Name = "splitContainerAdv";
             // 
-            // splitContainerAdv.pnlPaths
+            // splitContainerAdv.Panel1
             // 
             this.splitContainerAdv.Panel1.Controls.Add(this.lsvPaths);
             // 
-            // splitContainerAdv.pnlProperties
+            // splitContainerAdv.Panel2
             // 
             this.splitContainerAdv.Panel2.Controls.Add(this.txtCRC32);
             this.splitContainerAdv.Panel2.Controls.Add(this.lblCRC32);

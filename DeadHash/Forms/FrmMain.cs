@@ -255,5 +255,49 @@ namespace DeadHash.Forms
             splitContainerAdv.Panel2Collapsed = !propertiesBarItem.Checked;
             splitContainerAdv.IsSplitterFixed = !propertiesBarItem.Checked;
         }
+
+        /// <summary>
+        /// Hide or show checkboxes in the ListView
+        /// </summary>
+        /// <param name="sender">The Checkboxes bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void checkBoxesBarItem_Click(object sender, EventArgs e)
+        {
+            checkBoxesBarItem.Checked = !checkBoxesBarItem.Checked;
+            lsvPaths.CheckBoxes = checkBoxesBarItem.Checked;
+        }
+
+        /// <summary>
+        /// Hide or show gridlines in the ListView
+        /// </summary>
+        /// <param name="sender">The Gridnlines bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void gridlinesBarItem_Click(object sender, EventArgs e)
+        {
+            gridlinesBarItem.Checked = !gridlinesBarItem.Checked;
+            lsvPaths.GridLines = gridlinesBarItem.Checked;
+        }
+
+        /// <summary>
+        /// Change the TopMost property, depending on the state of the Always on top bar item button
+        /// </summary>
+        /// <param name="sender">The Always on top bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void alwaysOnTopBarItem_Click(object sender, EventArgs e)
+        {
+            alwaysOnTopBarItem.Checked = !alwaysOnTopBarItem.Checked;
+            TopMost = alwaysOnTopBarItem.Checked;
+        }
+
+        /// <summary>
+        /// Automatically resize the columns of the ListView
+        /// </summary>
+        /// <param name="sender">The Auto size bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void autoSizeColumnsBarItem_Click(object sender, EventArgs e)
+        {
+            lsvPaths.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            lsvPaths.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
     }
 }
