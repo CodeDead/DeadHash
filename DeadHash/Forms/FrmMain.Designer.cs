@@ -293,6 +293,7 @@ namespace DeadHash.Forms
             this.openBarItem.ShowToolTipInPopUp = false;
             this.openBarItem.SizeToFit = true;
             this.openBarItem.Text = "Open";
+            this.openBarItem.Click += new System.EventHandler(this.openBarItem_Click);
             // 
             // deleteBarItem
             // 
@@ -313,6 +314,7 @@ namespace DeadHash.Forms
             this.clearBarItem.ShowToolTipInPopUp = false;
             this.clearBarItem.SizeToFit = true;
             this.clearBarItem.Text = "Clear";
+            this.clearBarItem.Click += new System.EventHandler(this.clearBarItem_Click);
             // 
             // selectAllItemsBarItem
             // 
@@ -322,6 +324,7 @@ namespace DeadHash.Forms
             this.selectAllItemsBarItem.ShowToolTipInPopUp = false;
             this.selectAllItemsBarItem.SizeToFit = true;
             this.selectAllItemsBarItem.Text = "Select all items";
+            this.selectAllItemsBarItem.Click += new System.EventHandler(this.selectAllItemsBarItem_Click);
             // 
             // checkAllItemsBarItem
             // 
@@ -331,6 +334,7 @@ namespace DeadHash.Forms
             this.checkAllItemsBarItem.ShowToolTipInPopUp = false;
             this.checkAllItemsBarItem.SizeToFit = true;
             this.checkAllItemsBarItem.Text = "Check all items";
+            this.checkAllItemsBarItem.Click += new System.EventHandler(this.checkAllItemsBarItem_Click);
             // 
             // compareBarItem
             // 

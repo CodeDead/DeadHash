@@ -299,5 +299,61 @@ namespace DeadHash.Forms
             lsvPaths.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             lsvPaths.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
+
+        /// <summary>
+        /// Select all items in the ListView
+        /// </summary>
+        /// <param name="sender">The Select all items bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void selectAllItemsBarItem_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem lvi in lsvPaths.Items)
+            {
+                lvi.Selected = true;
+            }
+        }
+
+        /// <summary>
+        /// Check all items in the ListView
+        /// </summary>
+        /// <param name="sender">The Check all items bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void checkAllItemsBarItem_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem lvi in lsvPaths.Items)
+            {
+                lvi.Checked = true;
+            }
+        }
+
+        /// <summary>
+        /// Open the selected file
+        /// </summary>
+        /// <param name="sender">The Open bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void openBarItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                foreach (ListViewItem lvi in lsvPaths.SelectedItems)
+                {
+                    System.Diagnostics.Process.Start(lvi.Text);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
+        /// Clear all ListViewItems
+        /// </summary>
+        /// <param name="sender">The Clear bar item button</param>
+        /// <param name="e">Event argument</param>
+        private void clearBarItem_Click(object sender, EventArgs e)
+        {
+            lsvPaths.Items.Clear();
+        }
     }
 }
