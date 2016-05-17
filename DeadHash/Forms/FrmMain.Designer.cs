@@ -521,6 +521,7 @@ namespace DeadHash.Forms
             this.settingsBarItem.BarName = "settingsBarItem";
             this.settingsBarItem.CategoryIndex = 3;
             this.settingsBarItem.ID = "Settings";
+            this.settingsBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("settingsBarItem.Image")));
             this.settingsBarItem.ShowToolTipInPopUp = false;
             this.settingsBarItem.SizeToFit = true;
             this.settingsBarItem.Text = "Settings";

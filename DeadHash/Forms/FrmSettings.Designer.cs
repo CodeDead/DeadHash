@@ -35,6 +35,7 @@ namespace DeadHash.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSettings));
             this.SuspendLayout();
             // 
             // FrmSettings
@@ -48,6 +49,7 @@ namespace DeadHash.Forms
             this.CaptionButtonHoverColor = System.Drawing.Color.White;
             this.CaptionForeColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(313, 264);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MetroColor = System.Drawing.Color.SteelBlue;
             this.Name = "FrmSettings";
