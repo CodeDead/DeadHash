@@ -289,6 +289,7 @@ namespace DeadHash.Forms
             this.openBarItem.BarName = "openBarItem";
             this.openBarItem.CategoryIndex = 1;
             this.openBarItem.ID = "Open";
+            this.openBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("openBarItem.Image")));
             this.openBarItem.ShowToolTipInPopUp = false;
             this.openBarItem.SizeToFit = true;
             this.openBarItem.Text = "Open";
@@ -298,6 +299,7 @@ namespace DeadHash.Forms
             this.deleteBarItem.BarName = "deleteBarItem";
             this.deleteBarItem.CategoryIndex = 1;
             this.deleteBarItem.ID = "Delete";
+            this.deleteBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("deleteBarItem.Image")));
             this.deleteBarItem.ShowToolTipInPopUp = false;
             this.deleteBarItem.SizeToFit = true;
             this.deleteBarItem.Text = "Delete";
@@ -307,6 +309,7 @@ namespace DeadHash.Forms
             this.clearBarItem.BarName = "clearBarItem";
             this.clearBarItem.CategoryIndex = 1;
             this.clearBarItem.ID = "Clear";
+            this.clearBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("clearBarItem.Image")));
             this.clearBarItem.ShowToolTipInPopUp = false;
             this.clearBarItem.SizeToFit = true;
             this.clearBarItem.Text = "Clear";
@@ -334,6 +337,7 @@ namespace DeadHash.Forms
             this.compareBarItem.BarName = "compareBarItem";
             this.compareBarItem.CategoryIndex = 1;
             this.compareBarItem.ID = "Compare";
+            this.compareBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("compareBarItem.Image")));
             this.compareBarItem.ShowToolTipInPopUp = false;
             this.compareBarItem.SizeToFit = true;
             this.compareBarItem.Text = "Compare";
@@ -343,6 +347,7 @@ namespace DeadHash.Forms
             this.openInVirusTotalBarItem.BarName = "openInVirusTotalBarItem";
             this.openInVirusTotalBarItem.CategoryIndex = 1;
             this.openInVirusTotalBarItem.ID = "Open in VirusTotal";
+            this.openInVirusTotalBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("openInVirusTotalBarItem.Image")));
             this.openInVirusTotalBarItem.ShowToolTipInPopUp = false;
             this.openInVirusTotalBarItem.SizeToFit = true;
             this.openInVirusTotalBarItem.Text = "Open in VirusTotal";
