@@ -141,7 +141,7 @@ namespace DeadHash.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderColor = System.Drawing.Color.SteelBlue;
-            this.BorderThickness = 4;
+            this.BorderThickness = 2;
             this.CancelButton = this.btnClose;
             this.CaptionBarColor = System.Drawing.Color.SteelBlue;
             this.CaptionButtonColor = System.Drawing.Color.Black;
