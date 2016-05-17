@@ -552,6 +552,7 @@ namespace DeadHash.Forms
             this.helpBarItem.BarName = "helpBarItem";
             this.helpBarItem.CategoryIndex = 4;
             this.helpBarItem.ID = "Help_1";
+            this.helpBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("helpBarItem.Image")));
             this.helpBarItem.ShowToolTipInPopUp = false;
             this.helpBarItem.SizeToFit = true;
             this.helpBarItem.Text = "Help";
@@ -562,6 +563,7 @@ namespace DeadHash.Forms
             this.checkForUpdatesBarItem.BarName = "checkForUpdatesBarItem";
             this.checkForUpdatesBarItem.CategoryIndex = 4;
             this.checkForUpdatesBarItem.ID = "Check for updates";
+            this.checkForUpdatesBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("checkForUpdatesBarItem.Image")));
             this.checkForUpdatesBarItem.ShowToolTipInPopUp = false;
             this.checkForUpdatesBarItem.SizeToFit = true;
             this.checkForUpdatesBarItem.Text = "Check for updates";
@@ -571,6 +573,7 @@ namespace DeadHash.Forms
             this.websiteBarItem.BarName = "websiteBarItem";
             this.websiteBarItem.CategoryIndex = 4;
             this.websiteBarItem.ID = "Website";
+            this.websiteBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("websiteBarItem.Image")));
             this.websiteBarItem.ShowToolTipInPopUp = false;
             this.websiteBarItem.SizeToFit = true;
             this.websiteBarItem.Text = "Website";
@@ -581,6 +584,7 @@ namespace DeadHash.Forms
             this.licenseBarItem.BarName = "licenseBarItem";
             this.licenseBarItem.CategoryIndex = 4;
             this.licenseBarItem.ID = "License";
+            this.licenseBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("licenseBarItem.Image")));
             this.licenseBarItem.ShowToolTipInPopUp = false;
             this.licenseBarItem.SizeToFit = true;
             this.licenseBarItem.Text = "License";
@@ -591,6 +595,7 @@ namespace DeadHash.Forms
             this.aboutBarItem.BarName = "aboutBarItem";
             this.aboutBarItem.CategoryIndex = 4;
             this.aboutBarItem.ID = "About";
+            this.aboutBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("aboutBarItem.Image")));
             this.aboutBarItem.ShowToolTipInPopUp = false;
             this.aboutBarItem.SizeToFit = true;
             this.aboutBarItem.Text = "About";
