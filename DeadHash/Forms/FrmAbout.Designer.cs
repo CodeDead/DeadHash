@@ -38,10 +38,10 @@ namespace DeadHash.Forms
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbout));
             this.pnlAbout = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.lblAbout = new System.Windows.Forms.Label();
             this.btnCodeDead = new Syncfusion.Windows.Forms.ButtonAdv();
             this.btnClose = new Syncfusion.Windows.Forms.ButtonAdv();
-            this.lblAbout = new System.Windows.Forms.Label();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.btnPaomedia = new Syncfusion.Windows.Forms.ButtonAdv();
             this.pnlAbout.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -49,7 +49,7 @@ namespace DeadHash.Forms
             // 
             // pnlAbout
             // 
-            this.pnlAbout.BackColor = System.Drawing.Color.LightGray;
+            this.pnlAbout.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlAbout.Controls.Add(this.picLogo);
             this.pnlAbout.Controls.Add(this.lblAbout);
             this.pnlAbout.Dock = System.Windows.Forms.DockStyle.Top;
@@ -57,6 +57,31 @@ namespace DeadHash.Forms
             this.pnlAbout.Name = "pnlAbout";
             this.pnlAbout.Size = new System.Drawing.Size(386, 120);
             this.pnlAbout.TabIndex = 0;
+            this.pnlAbout.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Image = global::DeadHash.Properties.Resources.puzzle;
+            this.picLogo.Location = new System.Drawing.Point(74, 36);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(48, 48);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // lblAbout
+            // 
+            this.lblAbout.AutoSize = true;
+            this.lblAbout.BackColor = System.Drawing.Color.Transparent;
+            this.lblAbout.Location = new System.Drawing.Point(128, 21);
+            this.lblAbout.Name = "lblAbout";
+            this.lblAbout.Size = new System.Drawing.Size(185, 78);
+            this.lblAbout.TabIndex = 0;
+            this.lblAbout.Text = "DeadHash was created by DeadLine.\r\n\r\nTheme by: SyncFusion\r\nIcons by: paomedia (sm" +
+    "all-n-flat)\r\n\r\nCopyright © CodeDead 2016";
+            this.lblAbout.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnCodeDead
             // 
@@ -92,28 +117,6 @@ namespace DeadHash.Forms
             this.btnClose.UseVisualStyle = true;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // lblAbout
-            // 
-            this.lblAbout.AutoSize = true;
-            this.lblAbout.BackColor = System.Drawing.Color.Transparent;
-            this.lblAbout.Location = new System.Drawing.Point(128, 21);
-            this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(185, 78);
-            this.lblAbout.TabIndex = 0;
-            this.lblAbout.Text = "DeadHash was created by DeadLine.\r\n\r\nTheme by: SyncFusion\r\nIcons by: paomedia (sm" +
-    "all-n-flat)\r\n\r\nCopyright © CodeDead 2016";
-            // 
-            // picLogo
-            // 
-            this.picLogo.BackColor = System.Drawing.Color.Transparent;
-            this.picLogo.Image = global::DeadHash.Properties.Resources.puzzle;
-            this.picLogo.Location = new System.Drawing.Point(74, 36);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(48, 48);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogo.TabIndex = 1;
-            this.picLogo.TabStop = false;
             // 
             // btnPaomedia
             // 
