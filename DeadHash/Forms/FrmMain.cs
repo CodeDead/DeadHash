@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
 using Syncfusion.Windows.Forms;
@@ -19,7 +20,7 @@ namespace DeadHash.Forms
             LoadTheme();
             LoadLanguage();
 
-            foreach(string s in args)
+            foreach (string s in args)
             {
                 OpenFile(s);
             }
@@ -70,7 +71,7 @@ namespace DeadHash.Forms
         private void OpenFile(string path)
         {
             if (!File.Exists(path)) return;
-            ListViewItem lvi = new ListViewItem {Text = path};
+            ListViewItem lvi = new ListViewItem { Text = path };
             lsvPaths.Items.Add(lvi);
         }
 
@@ -114,7 +115,7 @@ namespace DeadHash.Forms
         {
             try
             {
-                System.Diagnostics.Process.Start("http://codedead.com/");
+                Process.Start("http://codedead.com/");
             }
             catch (Exception ex)
             {
@@ -141,7 +142,7 @@ namespace DeadHash.Forms
         {
             try
             {
-                System.Diagnostics.Process.Start("help.pdf");
+                Process.Start("help.pdf");
             }
             catch (Exception ex)
             {
@@ -158,7 +159,7 @@ namespace DeadHash.Forms
         {
             try
             {
-                System.Diagnostics.Process.Start("license.pdf");
+                Process.Start("license.pdf");
             }
             catch (Exception ex)
             {
@@ -337,7 +338,7 @@ namespace DeadHash.Forms
             {
                 foreach (ListViewItem lvi in lsvPaths.SelectedItems)
                 {
-                    System.Diagnostics.Process.Start(lvi.Text);
+                    Process.Start(lvi.Text);
                 }
             }
             catch (Exception ex)
@@ -354,6 +355,36 @@ namespace DeadHash.Forms
         private void clearBarItem_Click(object sender, EventArgs e)
         {
             lsvPaths.Items.Clear();
+        }
+
+        /// <summary>
+        /// Add the complete file path of all the running processes to the ListView
+        /// </summary>
+        /// <param name="sender">The Open Processes bar item</param>
+        /// <param name="e">Event argument</param>
+        private void openProcessesBarItem_Click(object sender, EventArgs e)
+        {
+            foreach (Process p in Process.GetProcesses())
+            {
+                try
+                {
+                    OpenFile(p.MainModule.FileName);
+                }
+                catch (Exception)
+                {
+                    // Ignored
+                }
+            }
+        }
+
+        /// <summary>
+        /// Open the path of the selected ListViewItem and load the details
+        /// </summary>
+        /// <param name="sender">The ListView</param>
+        /// <param name="e">Mouse event argument</param>
+        private void lsvPaths_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (lsvPaths.SelectedItems.Count == 0) return;
         }
     }
 }

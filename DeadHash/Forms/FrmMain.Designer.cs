@@ -227,6 +227,7 @@ namespace DeadHash.Forms
             this.openProcessesBarItem.ShowToolTipInPopUp = false;
             this.openProcessesBarItem.SizeToFit = true;
             this.openProcessesBarItem.Text = "Open processess...";
+            this.openProcessesBarItem.Click += new System.EventHandler(this.openProcessesBarItem_Click);
             // 
             // closeBarItem
             // 
@@ -474,7 +475,8 @@ namespace DeadHash.Forms
             this.toolsParentBarItem.MetroColor = System.Drawing.Color.SteelBlue;
             this.toolsParentBarItem.SeparatorIndices.AddRange(new int[] {
             2,
-            3});
+            3,
+            4});
             this.toolsParentBarItem.ShowToolTipInPopUp = false;
             this.toolsParentBarItem.SizeToFit = true;
             this.toolsParentBarItem.Text = "Tools";
@@ -485,6 +487,7 @@ namespace DeadHash.Forms
             this.fileComparerBarItem.BarName = "fileComparerBarItem";
             this.fileComparerBarItem.CategoryIndex = 3;
             this.fileComparerBarItem.ID = "File Comparer";
+            this.fileComparerBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("fileComparerBarItem.Image")));
             this.fileComparerBarItem.ShowToolTipInPopUp = false;
             this.fileComparerBarItem.SizeToFit = true;
             this.fileComparerBarItem.Text = "File Comparer";
@@ -494,6 +497,7 @@ namespace DeadHash.Forms
             this.textComparerBarItem.BarName = "textComparerBarItem";
             this.textComparerBarItem.CategoryIndex = 3;
             this.textComparerBarItem.ID = "Text Comparer";
+            this.textComparerBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("textComparerBarItem.Image")));
             this.textComparerBarItem.ShowToolTipInPopUp = false;
             this.textComparerBarItem.SizeToFit = true;
             this.textComparerBarItem.Text = "Text Comparer";
@@ -503,6 +507,7 @@ namespace DeadHash.Forms
             this.textHasherBarItem.BarName = "textHasherBarItem";
             this.textHasherBarItem.CategoryIndex = 3;
             this.textHasherBarItem.ID = "Text Hasher";
+            this.textHasherBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("textHasherBarItem.Image")));
             this.textHasherBarItem.ShowToolTipInPopUp = false;
             this.textHasherBarItem.SizeToFit = true;
             this.textHasherBarItem.Text = "Text Hasher";
@@ -512,6 +517,7 @@ namespace DeadHash.Forms
             this.folderMonitorBarItem.BarName = "folderMonitorBarItem";
             this.folderMonitorBarItem.CategoryIndex = 3;
             this.folderMonitorBarItem.ID = "Folder Monitor";
+            this.folderMonitorBarItem.Image = ((Syncfusion.Windows.Forms.Tools.XPMenus.ImageExt)(resources.GetObject("folderMonitorBarItem.Image")));
             this.folderMonitorBarItem.ShowToolTipInPopUp = false;
             this.folderMonitorBarItem.SizeToFit = true;
             this.folderMonitorBarItem.Text = "Folder Monitor";
@@ -646,6 +652,7 @@ namespace DeadHash.Forms
             this.lsvPaths.TabIndex = 0;
             this.lsvPaths.UseCompatibleStateImageBehavior = false;
             this.lsvPaths.View = System.Windows.Forms.View.Details;
+            this.lsvPaths.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lsvPaths_MouseDoubleClick);
             // 
             // clhPath
             // 
