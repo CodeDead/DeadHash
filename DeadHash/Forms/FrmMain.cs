@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using DeadHash.Classes;
 using Syncfusion.Windows.Forms;
 using Syncfusion.Windows.Forms.Tools;
 using FixedPanel = Syncfusion.Windows.Forms.Tools.Enums.FixedPanel;
@@ -76,6 +77,28 @@ namespace DeadHash.Forms
         }
 
         /// <summary>
+        /// Load the hashes of a file into the GUI
+        /// </summary>
+        /// <param name="path">The complete path of a file</param>
+        private void LoadHashes(string path)
+        {
+            try
+            {
+                txtMD5.Text = HashLoader.GetMD5FromFile(path);
+                txtSHA1.Text = HashLoader.GetSHA1FromFile(path);
+                txtSHA256.Text = HashLoader.GetSHA256FromFile(path);
+                txtSHA384.Text = HashLoader.GetSHA384FromFile(path);
+                txtSHA512.Text = HashLoader.GetSHA512FromFile(path);
+                txtRIPEMD160.Text = HashLoader.GetRIPEMD160FromFile(path);
+                txtCRC32.Text = HashLoader.GetCRC32FromFile(path);
+            }
+            catch (Exception ex)
+            {
+                MessageBoxAdv.Show(this, ex.Message, "DeadHash", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        /// <summary>
         /// Copy the content of the textbox to the clipboard
         /// </summary>
         /// <param name="sender">The textbox that was double clicked</param>
@@ -85,10 +108,18 @@ namespace DeadHash.Forms
             try
             {
                 TextBoxExt ext = sender as TextBoxExt;
-                if (ext != null && ext.Text.Length != 0)
-                {
-                    Clipboard.SetText(ext.Text);
-                }
+                if (ext == null || ext.Text.Length == 0) return;
+                Clipboard.SetText(ext.Text);
+
+                SuperToolTip stt = new SuperToolTip();
+                ToolTipInfo tti = new ToolTipInfo();
+                tti.Header.Hidden = true;
+                tti.BackColor = MetroColor;
+                tti.Body.Text = "Data copied to clipboard!";
+
+                stt.VisualStyle = SuperToolTip.Appearance.Metro;
+                stt.Style = SuperToolTip.SuperToolTipStyle.Balloon;
+                stt.Show(tti, MousePosition, 1000);
             }
             catch (Exception ex)
             {
@@ -385,7 +416,36 @@ namespace DeadHash.Forms
         private void lsvPaths_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (lsvPaths.SelectedItems.Count == 0) return;
+            if (lsvPaths.SelectedItems[0].Text.Length == 0) return;
 
+            LoadHashes(lsvPaths.SelectedItems[0].Text);
+        }
+
+        /// <summary>
+        /// Change the drag and drop effects
+        /// </summary>
+        /// <param name="sender">The Main Form</param>
+        /// <param name="e">Drag event argument</param>
+        private void FrmMain_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop) ? DragDropEffects.Copy : DragDropEffects.None;
+        }
+
+        /// <summary>
+        /// Open the full path of a dragged file into the GUI
+        /// </summary>
+        /// <param name="sender">The Main Form</param>
+        /// <param name="e">Drag event argument</param>
+        private void FrmMain_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] fileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            foreach (string file in fileList)
+            {
+                if (File.Exists(file))
+                {
+                    OpenFile(file);
+                }
+            }
         }
     }
 }

@@ -669,7 +669,7 @@ namespace DeadHash.Forms
             this.txtCRC32.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtCRC32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCRC32.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCRC32.Location = new System.Drawing.Point(93, 184);
+            this.txtCRC32.Location = new System.Drawing.Point(92, 184);
             this.txtCRC32.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtCRC32.Name = "txtCRC32";
             this.txtCRC32.ReadOnly = true;
@@ -685,7 +685,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCRC32.AutoSize = true;
             this.lblCRC32.BackColor = System.Drawing.Color.Transparent;
-            this.lblCRC32.Location = new System.Drawing.Point(14, 191);
+            this.lblCRC32.Location = new System.Drawing.Point(13, 191);
             this.lblCRC32.Name = "lblCRC32";
             this.lblCRC32.Size = new System.Drawing.Size(44, 13);
             this.lblCRC32.TabIndex = 12;
@@ -701,7 +701,7 @@ namespace DeadHash.Forms
             this.txtRIPEMD160.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtRIPEMD160.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRIPEMD160.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtRIPEMD160.Location = new System.Drawing.Point(93, 158);
+            this.txtRIPEMD160.Location = new System.Drawing.Point(92, 158);
             this.txtRIPEMD160.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtRIPEMD160.Name = "txtRIPEMD160";
             this.txtRIPEMD160.ReadOnly = true;
@@ -717,7 +717,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRIPEMD160.AutoSize = true;
             this.lblRIPEMD160.BackColor = System.Drawing.Color.Transparent;
-            this.lblRIPEMD160.Location = new System.Drawing.Point(14, 165);
+            this.lblRIPEMD160.Location = new System.Drawing.Point(13, 165);
             this.lblRIPEMD160.Name = "lblRIPEMD160";
             this.lblRIPEMD160.Size = new System.Drawing.Size(73, 13);
             this.lblRIPEMD160.TabIndex = 10;
@@ -733,7 +733,7 @@ namespace DeadHash.Forms
             this.txtSHA512.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA512.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA512.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSHA512.Location = new System.Drawing.Point(93, 132);
+            this.txtSHA512.Location = new System.Drawing.Point(92, 132);
             this.txtSHA512.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA512.Name = "txtSHA512";
             this.txtSHA512.ReadOnly = true;
@@ -749,7 +749,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSHA512.AutoSize = true;
             this.lblSHA512.BackColor = System.Drawing.Color.Transparent;
-            this.lblSHA512.Location = new System.Drawing.Point(14, 139);
+            this.lblSHA512.Location = new System.Drawing.Point(13, 139);
             this.lblSHA512.Name = "lblSHA512";
             this.lblSHA512.Size = new System.Drawing.Size(53, 13);
             this.lblSHA512.TabIndex = 8;
@@ -765,7 +765,7 @@ namespace DeadHash.Forms
             this.txtSHA384.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA384.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA384.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSHA384.Location = new System.Drawing.Point(93, 106);
+            this.txtSHA384.Location = new System.Drawing.Point(92, 106);
             this.txtSHA384.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA384.Name = "txtSHA384";
             this.txtSHA384.ReadOnly = true;
@@ -781,7 +781,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSHA384.AutoSize = true;
             this.lblSHA384.BackColor = System.Drawing.Color.Transparent;
-            this.lblSHA384.Location = new System.Drawing.Point(14, 113);
+            this.lblSHA384.Location = new System.Drawing.Point(13, 113);
             this.lblSHA384.Name = "lblSHA384";
             this.lblSHA384.Size = new System.Drawing.Size(53, 13);
             this.lblSHA384.TabIndex = 6;
@@ -797,7 +797,7 @@ namespace DeadHash.Forms
             this.txtSHA256.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA256.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA256.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSHA256.Location = new System.Drawing.Point(93, 80);
+            this.txtSHA256.Location = new System.Drawing.Point(92, 80);
             this.txtSHA256.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA256.Name = "txtSHA256";
             this.txtSHA256.ReadOnly = true;
@@ -813,7 +813,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSHA256.AutoSize = true;
             this.lblSHA256.BackColor = System.Drawing.Color.Transparent;
-            this.lblSHA256.Location = new System.Drawing.Point(14, 87);
+            this.lblSHA256.Location = new System.Drawing.Point(13, 87);
             this.lblSHA256.Name = "lblSHA256";
             this.lblSHA256.Size = new System.Drawing.Size(53, 13);
             this.lblSHA256.TabIndex = 4;
@@ -829,7 +829,7 @@ namespace DeadHash.Forms
             this.txtSHA1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSHA1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSHA1.Location = new System.Drawing.Point(93, 54);
+            this.txtSHA1.Location = new System.Drawing.Point(92, 54);
             this.txtSHA1.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtSHA1.Name = "txtSHA1";
             this.txtSHA1.ReadOnly = true;
@@ -845,7 +845,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSHA1.AutoSize = true;
             this.lblSHA1.BackColor = System.Drawing.Color.Transparent;
-            this.lblSHA1.Location = new System.Drawing.Point(14, 61);
+            this.lblSHA1.Location = new System.Drawing.Point(13, 61);
             this.lblSHA1.Name = "lblSHA1";
             this.lblSHA1.Size = new System.Drawing.Size(41, 13);
             this.lblSHA1.TabIndex = 2;
@@ -861,7 +861,7 @@ namespace DeadHash.Forms
             this.txtMD5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtMD5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMD5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMD5.Location = new System.Drawing.Point(93, 28);
+            this.txtMD5.Location = new System.Drawing.Point(92, 28);
             this.txtMD5.Metrocolor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(211)))), ((int)(((byte)(212)))));
             this.txtMD5.Name = "txtMD5";
             this.txtMD5.ReadOnly = true;
@@ -877,7 +877,7 @@ namespace DeadHash.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMD5.AutoSize = true;
             this.lblMD5.BackColor = System.Drawing.Color.Transparent;
-            this.lblMD5.Location = new System.Drawing.Point(14, 35);
+            this.lblMD5.Location = new System.Drawing.Point(13, 35);
             this.lblMD5.Name = "lblMD5";
             this.lblMD5.Size = new System.Drawing.Size(33, 13);
             this.lblMD5.TabIndex = 0;
@@ -885,6 +885,7 @@ namespace DeadHash.Forms
             // 
             // FrmMain
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderColor = System.Drawing.Color.SteelBlue;
@@ -901,6 +902,8 @@ namespace DeadHash.Forms
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DeadHash";
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.FrmMain_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.FrmMain_DragEnter);
             ((System.ComponentModel.ISupportInitialize)(this.mfbmMain)).EndInit();
             this.splitContainerAdv.Panel1.ResumeLayout(false);
             this.splitContainerAdv.Panel2.ResumeLayout(false);
