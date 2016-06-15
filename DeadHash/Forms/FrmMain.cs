@@ -385,6 +385,7 @@ namespace DeadHash.Forms
         private void lsvPaths_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             if (lsvPaths.SelectedItems.Count == 0) return;
+
         }
     }
 }
