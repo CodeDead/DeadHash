@@ -115,7 +115,7 @@ namespace DeadHash.Forms
                 ToolTipInfo tti = new ToolTipInfo();
                 tti.Header.Hidden = true;
                 tti.BackColor = MetroColor;
-                tti.Body.Text = "Data copied to clipboard!";
+                tti.Body.Text = "Data copied to clipboard!"; //Needs to be loaded from the LanguageManager
 
                 stt.VisualStyle = SuperToolTip.Appearance.Metro;
                 stt.Style = SuperToolTip.SuperToolTipStyle.Balloon;
