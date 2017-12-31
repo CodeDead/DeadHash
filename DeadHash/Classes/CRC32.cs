@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 
 namespace DeadHash.Classes
 {
+    /// <inheritdoc />
     /// <summary>
     /// Helper class for generating CRC32 hashes
     /// </summary>

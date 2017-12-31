@@ -55,7 +55,6 @@
   <ItemGroup>
     <Compile Include="Classes\CRC32.cs" />
     <Compile Include="Classes\HashLoader.cs" />
-    <Compile Include="Classes\LanguageManager.cs" />
     <Compile Include="Forms\FrmAbout.cs">
       <SubType>Form</SubType>
     </Compile>

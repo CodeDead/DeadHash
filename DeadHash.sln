@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadHash", "DeadHash\DeadHash.csproj", "{8139DCB8-9B78-43EA-8969-C4B4403E5771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadHash", "DeadHash-WPF\DeadHash.csproj", "{F6D05240-B18C-4B13-AC20-A70FA0CBFC61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8139DCB8-9B78-43EA-8969-C4B4403E5771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8139DCB8-9B78-43EA-8969-C4B4403E5771}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8139DCB8-9B78-43EA-8969-C4B4403E5771}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8139DCB8-9B78-43EA-8969-C4B4403E5771}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6D05240-B18C-4B13-AC20-A70FA0CBFC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6D05240-B18C-4B13-AC20-A70FA0CBFC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6D05240-B18C-4B13-AC20-A70FA0CBFC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6D05240-B18C-4B13-AC20-A70FA0CBFC61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB064562-CDC6-497F-B852-29BD8B521C2F}
 	EndGlobalSection
 EndGlobal
