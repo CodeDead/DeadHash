@@ -4,7 +4,7 @@ DeadHash is a freeware utility to calculate file hashes.
 # Requirements in order to build DeadHash:
 
 * Turn off 'Prefer 32-bit'
-* SyncFusion for Windows Forms (https://www.syncfusion.com/products/communitylicense)
+* [Syncfusion for WPF](https://www.syncfusion.com/products/communitylicense)
 * [.NET Framework 4.7](https://www.microsoft.com/en-us/download/details.aspx?id=55170)
 * [Visual Studio](https://visualstudio.com)
 
