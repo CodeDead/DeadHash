@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DeadHash.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="MetroColor" Type="System.Drawing.Color" Scope="User">
-      <Value Profile="(Default)">SteelBlue</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>
