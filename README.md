@@ -10,7 +10,8 @@ DeadHash is a freeware utility to calculate file hashes.
 
 # About
 You can find our company on the web: https://codedead.com/
+
 Do not hesitate to contact us if you have a question or if you need support with DeadLock.
 
 # License
-DeadHash is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.nl.html).
+DeadHash is licensed under the [GPLv3](https://www.gnu.org/licenses/quick-guide-gplv3.html).
