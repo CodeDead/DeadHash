@@ -14,10 +14,11 @@ using System.Windows.Shapes;
 
 namespace DeadHash.Windows
 {
+    /// <inheritdoc cref="Syncfusion.Windows.Shared.ChromelessWindow" />
     /// <summary>
     /// Interaction logic for AboutWindow.xaml
     /// </summary>
-    public partial class AboutWindow : Window
+    public partial class AboutWindow
     {
         public AboutWindow()
         {

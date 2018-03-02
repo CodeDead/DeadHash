@@ -5,6 +5,36 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="DeadHash.Windows.MainWindow"
     mc:Ignorable="d"
-    Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+    Title="DeadHash" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_File">
+                <MenuItem Header="Open">
+                    <MenuItem Header="File">
+
+                    </MenuItem>
+                    <MenuItem Header="Directory">
+
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Processes">
+
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Export">
+
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="Restart">
+
+                </MenuItem>
+                <MenuItem Header="Exit">
+
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
 </syncfusion:ChromelessWindow>
